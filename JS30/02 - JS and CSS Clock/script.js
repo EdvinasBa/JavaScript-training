@@ -9,6 +9,7 @@ function setDate() {
     const seconds = now.getSeconds();
 
     const hourDeg = ((hours/60) * 360) + 90;
+    // So it doesn't do a spin around
     if (hours === 0 || hours === 1) {
         hourHand.classList.toggle('no-transition');
     }
